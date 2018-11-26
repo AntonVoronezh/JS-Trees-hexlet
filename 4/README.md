@@ -1,10 +1,10 @@
-# 
+# reduce
 
  ## Задание
 ```
 
-reduce.js=== JS: Trees==============================
 Реализуйте и экспортируйте по умолчанию функцию-редьюсер обрабатывающую файловые деревья.
+
 const tree = mkdir('/', [
   mkdir('etc', [
     mkdir('nginx'),
@@ -14,6 +14,7 @@ const tree = mkdir('/', [
   ]),
   mkfile('hosts'),
 ]);
+
 reduce((acc, n) => acc + 1, tree, 0); // => 6
 
 
