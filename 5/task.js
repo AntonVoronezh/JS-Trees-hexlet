@@ -9,7 +9,6 @@ const findFilesByName = (argTree, argStr) => {
     }
     if (argTree.name.includes(argStr)) {
       const [first, ...rest] = newAcc;
-      // console.log('acc -> '+ '/' + rest.join('/'));
       pathArr.push('/' + rest.join('/'));
     }
     return { ...argTree };
